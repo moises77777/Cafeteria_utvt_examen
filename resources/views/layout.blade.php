@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Cafetería UTV')</title>
+    <title>@yield('title', 'Cafetería UTVT')</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
@@ -95,7 +95,7 @@
         <div class="logo-container">
             <div class="logo-icon">🍽️</div>
             <div class="logo-text">
-                <div class="logo-main">CAFETERÍA UTV</div>
+                <div class="logo-main"> CAFETERÍA UTVT</div>
                 <div class="logo-sub">Sistema de Gestión</div>
                 <div class="logo-university">Universidad Tecnológica del Valle de Toluca</div>
             </div>

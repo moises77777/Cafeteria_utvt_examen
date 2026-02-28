@@ -20,14 +20,7 @@
         @csrf
         <div class="form-group">
             <label for="nombre_categoria">Categoría:</label>
-            <select name="nombre_categoria" id="nombre_categoria" required>
-                <option value="">Seleccione una categoría</option>
-                <option value="Bebidas">Bebidas</option>
-                <option value="Postres">Postres</option>
-                <option value="Platillos Fuertes">Platillos Fuertes</option>
-                <option value="Entradas">Entradas</option>
-                <option value="Sopas">Sopas</option>
-            </select>
+            <input type="text" name="nombre_categoria" id="nombre_categoria" placeholder="Ej: Bebidas, Postres, Platillos Fuertes..." required>
         </div>
 
         <div class="form-group">

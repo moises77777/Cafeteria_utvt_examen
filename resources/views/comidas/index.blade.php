@@ -15,6 +15,7 @@
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Costo</th>
+                <th>Detalle</th>
                 <th>Tipo</th>
                 <th>Acciones</th>
             </tr>
@@ -25,6 +26,7 @@
                 <td>{{ $comida->id_comida }}</td>
                 <td>{{ $comida->nombre_comida }}</td>
                 <td>${{ number_format($comida->costo, 2) }}</td>
+                <td>{{ $comida->detalle_comida ?? 'Sin detalle' }}</td>
                 <td>{{ $comida->tipoComida->nombre_categoria ?? 'N/A' }}</td>
                 <td class="actions">
                     <a href="{{ route('comidas.show', $comida->id_comida) }}" class="btn btn-primary">Ver</a>
@@ -38,7 +40,7 @@
             </tr>
             @empty
             <tr>
-                <td colspan="5" style="text-align:center;">No hay comidas registradas</td>
+                <td colspan="6" style="text-align:center;">No hay comidas registradas</td>
             </tr>
             @endforelse
         </tbody>
