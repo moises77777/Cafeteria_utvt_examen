@@ -23,9 +23,8 @@
             <tr>
                 <td>{{ $tipo->id_tipo_comida }}</td>
                 <td>{{ $tipo->nombre_categoria }}</td>
-                <td>{{ $tipo->created_at->format('d/m/Y H:i') }}</td>
+                <td>{{ $tipo->created_at ? $tipo->created_at->format('d/m/Y H:i') : 'N/A' }}</td>
                 <td class="actions">
-                    <a href="{{ route('tipo_comidas.show', $tipo->id_tipo_comida) }}" class="btn btn-primary">Ver</a>
                     <a href="{{ route('tipo_comidas.edit', $tipo->id_tipo_comida) }}" class="btn btn-warning">Editar</a>
                     <form action="{{ route('tipo_comidas.destroy', $tipo->id_tipo_comida) }}" method="POST" style="display:inline;">
                         @csrf

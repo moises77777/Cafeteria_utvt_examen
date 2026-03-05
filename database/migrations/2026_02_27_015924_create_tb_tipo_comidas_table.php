@@ -18,7 +18,7 @@ return new class extends Migration
             
             // Campo ENUM con valores predefinidos para categorías estándar
             // Restringe los valores a las opciones válidas del sistema
-            $table->enum('nombre_categoria', ['Bebidas', 'Postres', 'Platillos Fuertes', 'Entradas', 'Sopas']);
+            $table->enum('nombre_categoria', ['Bebidas', 'Postres', 'Platillos Fuertes', 'Entradas', 'Sopas', 'Pan']);
             
             // Timestamps automáticos para registro de creación y actualización
             $table->timestamps();

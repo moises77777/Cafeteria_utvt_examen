@@ -25,12 +25,12 @@ class TipoComidaController extends Controller
     }
 
     // Procesa el formulario POST de creación, valida datos y guarda en tb_tipo_comidas
-    // Usa validación Laravel para asegurar que el campo nombre_categoria sea requerido y texto
+    // Usa validación Laravel para asegurar que el campo nombre_categoria sea requerido y esté en la lista
     // Redirige al listado con mensaje de éxito usando flash session
     public function store(Request $request)
     {
         $request->validate([
-            'nombre_categoria' => 'required|string|max:100'
+            'nombre_categoria' => 'required|in:Bebidas,Postres,Platillos Fuertes,Entradas,Sopas,Entremeses,Pan'
         ]);
 
         TipoComida::create($request->all());
@@ -59,7 +59,7 @@ class TipoComidaController extends Controller
     public function update(Request $request, string $id)
     {
         $request->validate([
-            'nombre_categoria' => 'required|string|max:100'
+            'nombre_categoria' => 'required|in:Bebidas,Postres,Platillos Fuertes,Entradas,Sopas,Entremeses,Pan'
         ]);
 
         $tipoComida = TipoComida::findOrFail($id);

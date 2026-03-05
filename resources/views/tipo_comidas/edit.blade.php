@@ -28,6 +28,7 @@
                 <option value="Platillos Fuertes" {{ $tipoComida->nombre_categoria == 'Platillos Fuertes' ? 'selected' : '' }}>Platillos Fuertes</option>
                 <option value="Entradas" {{ $tipoComida->nombre_categoria == 'Entradas' ? 'selected' : '' }}>Entradas</option>
                 <option value="Sopas" {{ $tipoComida->nombre_categoria == 'Sopas' ? 'selected' : '' }}>Sopas</option>
+                ç<option value="Pan" {{ $tipoComida->nombre_categoria == 'Pan' ? 'selected' : '' }}>Pan</option>
             </select>
         </div>
 

@@ -7,7 +7,7 @@ use App\Http\Controllers\ComidaController;
 // Ruta principal del proyecto - Muestra página de bienvenida por defecto
 // Se accede mediante GET a la URL raíz http://dominio.com/
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('tipo_comidas.index');
 });
 
 // Rutas resource automáticas que generan las 7 rutas CRUD estándar

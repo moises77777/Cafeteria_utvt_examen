@@ -29,7 +29,6 @@
                 <td>{{ $comida->detalle_comida ?? 'Sin detalle' }}</td>
                 <td>{{ $comida->tipoComida->nombre_categoria ?? 'N/A' }}</td>
                 <td class="actions">
-                    <a href="{{ route('comidas.show', $comida->id_comida) }}" class="btn btn-primary">Ver</a>
                     <a href="{{ route('comidas.edit', $comida->id_comida) }}" class="btn btn-warning">Editar</a>
                     <form action="{{ route('comidas.destroy', $comida->id_comida) }}" method="POST" style="display:inline;">
                         @csrf
